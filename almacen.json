@@ -1,46 +1,125 @@
 {
-  "mascotas": [
+  "gestores": [
     {
       "id": "1",
-      "nombre": "Princesa",
-      "tipo": "Perrita regalona",
-      "color": "rosado"
-    },
-    {
-      "id": "2",
-      "nombre": "León",
-      "tipo": "Perro",
-      "color": "blanco"
-    }
-  ],
-  "usuarios": [
-    {
-      "id": "1",
-      "username": "usuario1",
-      "password": "duoc1234",
-      "email": "usuario1@mail.cl",
+      "username": "simono",
+      "password": "asdqwe12",
+      "email": "gestor1@gmail.cl",
+      "name": "kaiak",
+      "lastName": "troncoso",
       "isactive": true
     },
     {
       "id": "2",
-      "username": "usuario2",
-      "password": "maipu1234",
-      "email": "usuario2@mail.cl",
+      "username": "simona",
+      "password": "asdqwe12",
+      "email": "gestor2@gmail.cl",
+      "name": "kaiaka",
+      "lastName": "troncosa",
+      "isactive": true
+    },
+    {
+      "id": "9dd9",
+      "username": "vichoko",
+      "email": "ad.sagurie@duocuc.cl",
+      "password": "asdqwe12",
+      "name": "vicente",
+      "lastName": "torres",
+      "isactive": true
+    },
+    {
+      "id": "5bc0",
+      "username": "lauchitagamer",
+      "email": "lau@laucha.com",
+      "password": "asdqwe12",
+      "name": "laureano",
+      "lastName": "caquis",
       "isactive": true
     }
   ],
-  "qr": [
+  "eventos": [
     {
-      "id": "a013",
-      "nomMascota": "Princesa",
-      "tipoMascota": "Perrita regalona",
-      "username": "usuario1"
+      "id": "1",
+      "nombre": "charla logistica",
+      "fecha": "23-10-2024",
+      "lugar": "sala de conferencias",
+      "descripcion": "se dara una charla acerca de logistica",
+      "imagen": "assets/img/logistica.jpg"
     },
     {
-      "id": "8df2",
-      "nomMascota": "León",
-      "tipoMascota": "Perro",
-      "username": "usuario1"
+      "id": "fb6f",
+      "nombre": "libros",
+      "descripcion": "feria de libros conmemorativa laureano caquis",
+      "fecha": "2024-11-15",
+      "lugar": "sede maipu",
+      "imagen": "C:\\fakepath\\libro.png"
+    },
+    {
+      "id": "1c03",
+      "nombre": "show comedia",
+      "descripcion": "comedia comediante",
+      "fecha": "2024-11-15",
+      "lugar": "Hall sede duoc maipu",
+      "imagen": "C:\\fakepath\\Captura de pantalla 2024-05-29 222619.png"
+    },
+    {
+      "id": "4c61",
+      "nombre": "evento programacion",
+      "descripcion": "evento de programacion para jovenes programadores",
+      "fecha": "2024-11-13",
+      "lugar": "sede plaza oeste",
+      "imagen": ""
+    }
+  ],
+  "inscritos":[
+    {
+      "id": "10",
+      "username": "ratongamer",
+      "nombre": "libros",
+      "rut": "21544987"
+    },
+    {
+      "id": "11",
+      "username": "Sakki95",
+      "nombre": "show comedia",
+      "rut": "21466890"
+    },
+    {
+      "id": "12",
+      "username": "SimoGod",
+      "nombre": "charla logistica",
+      "rut": "21966508"
+    },
+    {
+      "id": "13",
+      "username": "SimonKaiak",
+      "nombre": "evento programacion",
+      "rut": "20461324"
+    },
+    {
+      "id": "14",
+      "username": "PKthundeer",
+      "nombre": "show comedia",
+      "rut": "21466508"
+    },
+    {
+      "id": "15",
+      "username": "Laubad",
+      "nombre": "show comedia",
+      "rut": "22459823"
+    },
+    {
+      "id": "16",
+      "username": "Skaders",
+      "nombre": "charla logistica",
+      "rut": "19752435"
+    },
+    {
+      "id": "17",
+      "username": "Faker",
+      "nombre": "libros",
+      "rut": "20485726"
     }
   ]
+
 }
