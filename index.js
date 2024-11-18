@@ -4,6 +4,7 @@ const router = jsonServer.router("almacen.json"); // Tu archivo JSON
 const middlewares = jsonServer.defaults();
 const multer = require("multer");
 const path = require("path");
+server.use('/uploads', express.static('uploads'));
 
 // Configuración de multer para almacenar archivos en la carpeta "uploads"
 const storage = multer.diskStorage({
