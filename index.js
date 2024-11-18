@@ -1,17 +1,18 @@
 const jsonServer = require("json-server");
-const multer = require("multer"); // Importa multer
+const multer = require("multer");
 const path = require("path");
-const express = require("express"); // Asegúrate de requerir express
+const cors = require("cors"); // Importa cors
+const express = require("express");
 
 const server = jsonServer.create();
 const router = jsonServer.router("almacen.json");
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 10000;
 
-// Configura multer para manejar las subidas de imágenes
+// Configura multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/"); // Carpeta donde se guardarán las imágenes
+    cb(null, "uploads/");
   },
   filename: (req, file, cb) => {
     cb(null, `${Date.now()}-${file.originalname}`);
@@ -26,13 +27,15 @@ if (!fs.existsSync("uploads")) {
   fs.mkdirSync("uploads");
 }
 
+// Habilitar CORS para todas las solicitudes
+server.use(cors());
+
 // Endpoint para subir imágenes
 server.post("/upload-image", upload.single("image"), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No se subió ningún archivo" });
   }
 
-  // Construir la URL de la imagen
   const fileUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
   res.status(200).json({ imageUrl: fileUrl });
 });
@@ -40,7 +43,7 @@ server.post("/upload-image", upload.single("image"), (req, res) => {
 // Sirve la carpeta de subidas como recursos estáticos
 server.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// Usa JSON Server para manejar recursos restantes
+// Usa JSON Server para manejar los recursos
 server.use(middlewares);
 server.use(router);
 
