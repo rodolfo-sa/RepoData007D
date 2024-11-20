@@ -120,6 +120,21 @@
       "nombre": "libros",
       "rut": "20485726"
     }
+  ],
+  "qrinscritos": [
+    {
+      "id": "1",
+      "username": "usuario1",
+      "nombre": "Nombre 1",
+      "rut": "12345678"
+    },
+    {
+      "id": "2",
+      "username": "usuario2",
+      "nombre": "Nombre 2",
+      "rut": "98765432"
+              
+    }
   ]
 
 }
