@@ -37,6 +37,26 @@
       "isactive": true
     }
   ],
+
+  "usuarios": [
+    {
+      "id": "93b7",
+      "username": "a a a a",
+      "email": "vic@gmail.com",
+      "password": "asdqwe12",
+      "rut": "21466508-5",
+      "isactive": true
+    },
+    {
+      "id": "61fb",
+      "username": "a a a aa",
+      "email": "adan.sagu@gmail.com",
+      "password": "asdqwe12",
+      "rut": "21466508.5",
+      "isactive": true
+    }
+  ],
+  
   "eventos": [
     {
       "id": "1",
