@@ -41,10 +41,10 @@
   "usuarios": [
     {
       "id": "93b7",
-      "username": "a a a a",
-      "email": "vic@gmail.com",
+      "username": "Sakki95",
       "password": "asdqwe12",
-      "rut": "21466508-5",
+      "email": "ad.sagurie@duocuc.cl",
+      "rut": "21466890-5",
       "isactive": true
     },
     {
@@ -55,8 +55,9 @@
       "rut": "21466508.5",
       "isactive": true
     }
+    
   ],
-  
+
   "eventos": [
     {
       "id": "1",
