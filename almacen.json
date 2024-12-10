@@ -92,6 +92,17 @@
       "imagen": ""
     }
   ],
+  "comentarios":[
+    {
+    "id":"098",
+    "nombre":"charla logistica", 
+    "name":"vicente",
+    "lastName":"torres",
+    "rut": "12345678", 
+    "comentario":"asistencia confirmada, disfrute el evento."
+  }
+  ],
+
   "inscritos":[
     {
       "id": "10",
